@@ -13,7 +13,7 @@ public class exercicio04 {
 		
 		Scanner entradaDados = new Scanner(System.in);
 		
-		real a, b, c, r, s, d;
+		double a, b, c, r, s, d;
 		
 		System.out.println("Digite o valor de A: ");
 		a = entradaDados.nextDouble();
@@ -24,8 +24,8 @@ public class exercicio04 {
 		System.out.println("Digite o valor de C: ");
 		c = entradaDados.nextDouble();
 		
-		r = (a + b)Math.pow(2);
-		s = (b+c)Math.pow(2);
+		r = Math.pow((a + b),2);
+		s = Math.pow((b+c),2);
 		d = (r+s) /2;
 		
 		System.out.println("O resultado da expressão é igual a " + d);

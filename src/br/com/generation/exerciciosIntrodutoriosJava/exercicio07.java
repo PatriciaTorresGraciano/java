@@ -11,45 +11,35 @@ public class exercicio07 {
 
 	public static void main(String[] args) {
 		
-		Scanner entradaA = new Scanner(System.in);
-		Scanner entradaB = new Scanner(System.in);
-		Scanner entradaC = new Scanner(System.in);
-		Scanner entradaD = new Scanner(System.in);
-		Scanner entradaE = new Scanner(System.in);
-		Scanner entradaF = new Scanner(System.in);
-		
+		Scanner leia = new Scanner(System.in);
+
 		double a, b, c, d, e, f, x, y;
 		
 		System.out.println("Digite o valor de A: ");
-		a = entradaA.nextDouble();
+		a = leia.nextDouble();
 		
 		System.out.println("Digite o valor de B: ");
-		b = entradaB.nextDouble();
+		b = leia.nextDouble();
 		
 		System.out.println("Digite o valor de C: ");
-		c = entradaC.nextDouble();
+		c = leia.nextDouble();
 		
 		System.out.println("Digite o valor de D: ");
-		d = entradaD.nextDouble();
+		d = leia.nextDouble();
 		
 		System.out.println("Digite o valor de E: ");
-		e = entradaE.nextDouble();
+		e = leia.nextDouble();
 		
 		System.out.println("Digite o valor de F: ");
-		f = entradaF.nextDouble();
+		f = leia.nextDouble();
 		
 		x = ((c*e) - (b*f)) / ((a*c) - (b*d));
 		y = ((a*f) - (c*d)) / ((a*e) - (b*d));
 		
 		System.out.println(" O valor de X é = " + x + " e Y é = " + y );
 				
-	
-		entradaA.close();
-		entradaB.close();
-		entradaC.close();
-		entradaD.close();
-		entradaE.close();
-		entradaF.close();
+		leia.close();
+		
 	}
 
 }

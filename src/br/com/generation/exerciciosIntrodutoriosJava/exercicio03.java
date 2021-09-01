@@ -1,5 +1,6 @@
 package br.com.generation.exerciciosIntrodutoriosJava;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /*Programa: Exercício 03
@@ -10,6 +11,8 @@ import java.util.Scanner;
 public class exercicio03 {
 
 	public static void main(String[] args) {
+		
+		DecimalFormat formatarDecimal = new DecimalFormat("0.00");
 		
 		Scanner entradaDados = new Scanner(System.in);
 		
@@ -22,8 +25,8 @@ public class exercicio03 {
 		minutosEvento = segundosEvento / tempo;
 		horasEvento = minutosEvento / tempo;
 		
-		System.out.println(" A duração do evento na fábrica foi de " + minutosEvento+ " minutos ou " + horasEvento
-		+ " horas ou " + segundosEvento + " segundos");
+		System.out.println(" A duração do evento na fábrica foi de " + formatarDecimal.format(minutosEvento)+ " minutos ou " + formatarDecimal.format(horasEvento)
+		+ " horas ou " + formatarDecimal.format(segundosEvento) + " segundos");
 		
 		entradaDados.close();
 	
