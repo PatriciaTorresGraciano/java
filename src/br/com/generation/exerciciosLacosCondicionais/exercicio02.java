@@ -14,8 +14,11 @@ public class exercicio02 {
 	
 		Scanner entradaDados = new Scanner(System.in);
 		
-		int numero1, numero2 , numero3, maiorNumero=-999999999, menorNumero = -999999;
-		
+		int numero1, numero2 , numero3;
+		int maiorNumero = -999999999;
+		int numeroMeio = -999999999;
+		int menorNumero = -999999999;
+	
 		System.out.println("Digite o valor do número 1: ");
 		numero1 = entradaDados.nextInt();
 		
@@ -51,9 +54,18 @@ public class exercicio02 {
 		}
 		
 		//Condição para identificar o número do meio
+		if(numero1 != maiorNumero && numero1 != menorNumero) {
+			numeroMeio = numero1;
+		}
+		else if(numero2 != maiorNumero && numero2 != menorNumero) {
+			numeroMeio = numero2;
+		}
+		else if(numero3 != maiorNumero && numero3 != menorNumero) {
+			numeroMeio = numero3;
+		}
 	
 		
-		System.out.println("A ordem crescente dos números é igual a " + maiorNumero + menorNumero);
+		System.out.println("A ordem crescente dos números é:  " + "\n" + maiorNumero + "\n" + numeroMeio + "\n" + menorNumero);
 		
 		entradaDados.close();
 
