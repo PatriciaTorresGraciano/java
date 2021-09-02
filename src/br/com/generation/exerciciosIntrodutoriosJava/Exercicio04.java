@@ -7,7 +7,7 @@ import java.util.Scanner;
 *Data: 31/08/2021
 */
 
-public class exercicio04 {
+public class Exercicio04 {
 
 	public static void main(String[] args) {
 		

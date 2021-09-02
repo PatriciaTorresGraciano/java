@@ -9,7 +9,7 @@ import java.util.zip.DataFormatException;
 *Data: 31/08/2021
 */
 
-public class exercicio06 {
+public class Exercicio06 {
 	
 	//Função para a realização de Raíz Qadrada de tipo double
 	public static double calculaRaiz(double valor) {
