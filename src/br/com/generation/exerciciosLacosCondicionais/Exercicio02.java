@@ -65,7 +65,7 @@ public class Exercicio02 {
 		}
 	
 		
-		System.out.println("A ordem crescente dos números é:  " + "\n" + maiorNumero + "\n" + numeroMeio + "\n" + menorNumero);
+		System.out.println("A ordem crescente dos números é:  " + "\n" + menorNumero + "\n" + numeroMeio + "\n" + maiorNumero);
 		
 		entradaDados.close();
 
