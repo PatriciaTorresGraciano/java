@@ -1,13 +1,19 @@
 package br.com.generation.exerciciosPOOHeranca.exercicio01;
 
-public class Animal {
+public abstract class Animal {
 
+	//Atributos de Animal
 	private String nome;
 	private int idade;
-	private String som;
 	public String getNome() {
 		return nome;
 	}
+	
+	//Método de Animal
+	public abstract void emitirSom();
+	public abstract void locomocao();
+	
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -17,14 +23,6 @@ public class Animal {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public String getSom() {
-		return som;
-	}
-	public void setSom(String som) {
-		this.som = som;
-	}
+
 	
-	public String emitirSom(String som) {
-		return this.som= som;
-	}
 }
